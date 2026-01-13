@@ -6,64 +6,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* ===== GLOBAL ===== */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   background: #f4f6f8;
   color: #222;
 }
 
 /* ===== HEADER ===== */
 header {
-  background: linear-gradient(135deg, #001c3d, #003366);
-  color: white;
+  background: linear-gradient(120deg, #0b2b4c, #0e3a66);
+  color: #ffffff;
 }
 
 .header-wrap {
   max-width: 1200px;
   margin: auto;
-  padding: 35px;
+  padding: 70px 40px;
   display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 25px;
+  grid-template-columns: 220px 1fr;
+  gap: 45px;
   align-items: center;
 }
 
-.header-wrap img {
-  width: 170px;
-  border-radius: 8px;
-  border: 4px solid rgba(255,255,255,0.2);
+.header-photo img {
+  width: 200px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
 }
 
-.header-title {
-  font-size: 30px;
-  font-weight: bold;
+.header-name {
+  font-size: 38px;
+  font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-.header-role {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 10px;
+.header-designation {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.95;
+  margin-bottom: 18px;
 }
 
-.header-inst,
-.header-roles,
-.header-ids {
+.header-institution {
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 780px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.header-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.header-chip {
+  background: rgba(255,255,255,0.14);
+  padding: 9px 16px;
+  border-radius: 22px;
   font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  font-weight: 500;
 }
 
-.header-ids a,
-.header-roles a {
+.header-links a {
   color: #9fd3ff;
+  margin-right: 18px;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
 }
 
-.header-ids a:hover,
-.header-roles a:hover {
+.header-links a:hover {
   text-decoration: underline;
 }
 
@@ -71,15 +89,15 @@ header {
 nav {
   background: #00152e;
   text-align: center;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 nav a {
-  color: white;
-  margin: 0 10px;
+  color: #ffffff;
+  margin: 0 12px;
   text-decoration: none;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -89,14 +107,9 @@ nav a:hover {
 /* ===== CONTENT ===== */
 section {
   max-width: 1100px;
-  margin: 25px auto;
-  background: white;
-  padding: 30px;
-}
-
-p, li {
-  text-align: justify;
-  line-height: 1.7;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 35px;
 }
 
 h2 {
@@ -105,15 +118,21 @@ h2 {
   padding-bottom: 6px;
 }
 
+p, li {
+  text-align: justify;
+  line-height: 1.8;
+}
+
 .button {
   display: inline-block;
   background: #002147;
-  color: white;
-  padding: 10px 16px;
-  text-decoration: none;
-  margin-top: 12px;
+  color: #ffffff;
+  padding: 11px 18px;
+  margin-top: 14px;
   margin-right: 10px;
-  border-radius: 3px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .button:hover {
@@ -123,9 +142,9 @@ h2 {
 /* ===== FOOTER ===== */
 footer {
   background: #002147;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  padding: 12px;
+  padding: 14px;
   font-size: 14px;
 }
 </style>
@@ -136,38 +155,36 @@ footer {
 <header>
   <div class="header-wrap">
 
-    <img src="assets/photo.jpg" alt="Dr. Aditya Kumar Singh Pundir">
+    <div class="header-photo">
+      <img src="assets/photo.jpg" alt="Dr. Aditya Kumar Singh Pundir">
+    </div>
 
     <div>
-      <div class="header-title">
+      <div class="header-name">
         DR. ADITYA KUMAR SINGH PUNDIR
       </div>
 
-      <div class="header-role">
+      <div class="header-designation">
         Professor, Department of Electronics & Communication Engineering (NBA Accredited)
       </div>
 
-      <div class="header-inst">
+      <div class="header-institution">
         Arya College of Engineering & I.T., Jaipur, Rajasthan, India (NAAC ‘A’, Autonomous)<br>
         <strong>Affiliation:</strong> Rajasthan Technical University, Kota, Rajasthan, India
       </div>
 
-      <div class="header-roles">
-        <strong>Chief Investigator:</strong> C2S Program, MEITY, Govt. of India<br>
-        <strong>Organizing Chair:</strong> ICRTCIS Conference Series
-        (<a href="https://www.icrtcis.in/" target="_blank">icrtcis.in</a>)<br>
-        <strong>Coordinator:</strong> Mentor Incubation & Research / IPR (R & D Cell & IPR Cell)<br>
-        LMISTE | MACM | LMCSI | LM Vijnana Bharati (VIBHA)
+      <div class="header-highlights">
+        <div class="header-chip">Chief Investigator – C2S (MEITY, Govt. of India)</div>
+        <div class="header-chip">Organizing Chair – ICRTCIS</div>
+        <div class="header-chip">Coordinator – Research & IPR Cell</div>
+        <div class="header-chip">LMISTE · MACM · LMCSI · VIBHA</div>
       </div>
 
-      <div class="header-ids">
-        <strong>ORCID:</strong> 0000-0002-6762-9263 &nbsp;|&nbsp;
-        <strong>VIDWAN:</strong>
-        <a href="https://vidwan.inflibnet.ac.in/profile/62339" target="_blank">Profile</a> &nbsp;|&nbsp;
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/dradityapundir" target="_blank">Profile</a><br>
-        <strong>Email:</strong> dr.adityapundir@aryacollege.in, aditya.pundir@gmail.com<br>
-        <strong>Contact:</strong> +91-9784637603 (H) / +91-8209333973 (O)
+      <div class="header-links">
+        <a href="https://www.icrtcis.in/" target="_blank">ICRTCIS</a>
+        <a href="https://vidwan.inflibnet.ac.in/profile/62339" target="_blank">VIDWAN</a>
+        <a href="https://www.linkedin.com/in/dradityapundir" target="_blank">LinkedIn</a>
+        <a href="https://orcid.org/0000-0002-6762-9263" target="_blank">ORCID</a>
       </div>
     </div>
 
@@ -175,19 +192,19 @@ footer {
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="education.html">Education</a>
-<a href="experience.html">Experience</a>
-<a href="research.html">Research</a>
-<a href="publications.html">Publications</a>
-<a href="ipr.html">IPR</a>
-<a href="projects.html">Projects</a>
-<a href="activities.html">Professional Activities</a>
-<a href="workshops.html">Workshops</a>
-<a href="students.html">Students Supervised</a>
-<a href="cfp.html">Call for Paper</a>
-<a href="downloads.html">Downloads</a>
-<a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="ipr.html">IPR</a>
+  <a href="projects.html">Projects</a>
+  <a href="activities.html">Professional Activities</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="students.html">Students Supervised</a>
+  <a href="cfp.html">Call for Paper</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <section>
@@ -197,8 +214,8 @@ footer {
 Dr. Aditya Kumar Singh Pundir has completed his Ph.D. in the area of
 <strong>VLSI & Embedded Systems / Reconfigurable Hardware</strong> with the research title
 <strong>“Fault Tolerant Reconfigurable Hardware Design using BIST Technique on SRAM”</strong>.
-He completed his M.Tech. in VLSI Design from Rajasthan Technical University, Kota
-and B.E. in Electronics & Communication Engineering from Rajasthan University, Jaipur.
+He completed his M.Tech. in VLSI Design from Rajasthan Technical University, Kota and
+B.E. in Electronics & Communication Engineering from Rajasthan University, Jaipur.
 </p>
 
 <p>
@@ -214,14 +231,8 @@ and the publication of 20 patents.
 </p>
 
 <p>
-He has authored and edited several book chapters and six books, and has authored more than
+He has authored and edited several book chapters and six books and has authored more than
 50 research papers in peer-reviewed refereed journals including SCOPUS, SCI, and SCIE.
-</p>
-
-<p>
-He has organized more than 30 workshops, summer internships, training programs,
-national seminars, and international conferences at various levels as Coordinator,
-Convener, Organizing Secretary, and Chair.
 </p>
 
 <p>
