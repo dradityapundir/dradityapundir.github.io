@@ -76,7 +76,7 @@ nav a:hover {
 
 /* ===== CONTENT ===== */
 section {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: 30px auto;
   background: #ffffff;
   padding: 35px;
@@ -89,27 +89,33 @@ h2 {
   margin-bottom: 25px;
 }
 
-.education-item {
-  margin-bottom: 28px;
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
 }
 
-.education-item h3 {
-  margin: 0;
-  font-size: 18px;
+th {
+  background: #002147;
+  color: #ffffff;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+td strong {
   color: #002147;
 }
 
-.education-item span {
-  display: block;
-  font-size: 14px;
-  color: #555;
-  margin-top: 4px;
-}
-
-.education-item p {
-  margin-top: 8px;
-  text-align: justify;
-  line-height: 1.7;
+tr:nth-child(even) {
+  background: #f7f9fb;
 }
 
 /* ===== FOOTER ===== */
@@ -162,38 +168,108 @@ footer {
 <section>
 <h2>Educational Qualifications</h2>
 
-<div class="education-item">
-  <h3>Ph.D. – VLSI & Embedded Systems / Reconfigurable Hardware</h3>
-  <span>
-    Research Title: “Fault Tolerant Reconfigurable Hardware Design using BIST Technique on SRAM”
-  </span>
-  <p>
-    Doctoral research focused on fault tolerant reconfigurable hardware architectures
-    with emphasis on Built-In Self-Test (BIST) techniques applied to SRAM-based systems.
-    The work contributed towards improving reliability and fault diagnosis in
-    reconfigurable hardware platforms.
-  </p>
-</div>
+<table>
+  <tr>
+    <th>Examination</th>
+    <th>Board / University</th>
+    <th>Passing Year</th>
+    <th>% / SGPA / CGPA</th>
+  </tr>
 
-<div class="education-item">
-  <h3>M.Tech. – VLSI Design</h3>
-  <span>Rajasthan Technical University, Kota, Rajasthan, India</span>
-  <p>
-    Specialized in VLSI system design, semiconductor devices, digital IC design,
-    and embedded systems. Acquired strong foundation in CAD tools,
-    hardware description languages, and system-level design methodologies.
-  </p>
-</div>
+  <tr>
+    <td>
+      <strong>Ph.D.</strong><br>
+      (Broad Area: VLSI & Embedded Systems)<br><br>
+      <strong>Title:</strong><br>
+      “Fault Tolerant Reconfigurable Hardware Design using BIST Technique on SRAM”
+    </td>
+    <td>
+      Poornima University, Jaipur
+    </td>
+    <td>
+      Enrolled: 09 July 2013<br>
+      Submitted: 10 October 2017<br>
+      Viva Defense: 09 April 2018<br>
+      Provisional Degree: 28 April 2018<br>
+      Degree Awarded: 05 January 2019
+    </td>
+    <td>
+      SGPA: 8.44<br>
+      Percentage: 76.72%<br>
+      (Course Work)<br><br>
+      <strong>Status:</strong> Awarded
+    </td>
+  </tr>
 
-<div class="education-item">
-  <h3>B.E. – Electronics & Communication Engineering</h3>
-  <span>Rajasthan University, Jaipur, Rajasthan, India</span>
-  <p>
-    Undergraduate studies focused on core electronics and communication engineering
-    subjects including analog and digital electronics, signal processing,
-    communication systems, and microprocessors.
-  </p>
-</div>
+  <tr>
+    <td>
+      <strong>M.Tech.</strong><br>
+      (VLSI Design)<br>
+      LIET, Alwar
+    </td>
+    <td>
+      Rajasthan Technical University, Kota
+    </td>
+    <td>
+      2012 – 2013
+    </td>
+    <td>
+      72% (Hons)<br>
+      (1576 / 2200)
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>B.E.</strong><br>
+      (Electronics & Communication Engineering)<br>
+      PCE, Jaipur
+    </td>
+    <td>
+      Rajasthan University
+    </td>
+    <td>
+      2007 – 2008
+    </td>
+    <td>
+      73% (Hons)<br>
+      (5080 / 7000)
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>XII</strong>
+    </td>
+    <td>
+      Rajasthan Board of Secondary Education (RBSE)
+    </td>
+    <td>
+      2002 – 2003
+    </td>
+    <td>
+      79%<br>
+      (513 / 650)
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <strong>X</strong>
+    </td>
+    <td>
+      Rajasthan Board of Secondary Education (RBSE)
+    </td>
+    <td>
+      2000 – 2001
+    </td>
+    <td>
+      85%<br>
+      (511 / 600)
+    </td>
+  </tr>
+
+</table>
 
 </section>
 
