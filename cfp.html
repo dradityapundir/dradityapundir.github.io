@@ -2,80 +2,150 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Call for Papers | ICRTCIS 2026</title>
+<title>Call for Papers | Dr. Aditya Kumar Singh Pundir</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-    margin:0;
-    font-family:"Segoe UI", Arial, sans-serif;
-    background:#f4f6f8;
-    color:#222;
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
 }
-header{
-    background:#002147;
-    color:#fff;
-    padding:20px 0;
-    text-align:center;
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(120deg, #0b2b4c, #0e3a66);
+  color: #ffffff;
 }
-nav{
-    background:#00152e;
-    text-align:center;
-    padding:12px 0;
+
+.header-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 40px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: center;
 }
-nav a{
-    color:#fff;
-    margin:0 10px;
-    text-decoration:none;
-    font-weight:600;
-    font-size:14px;
+
+.header-photo img {
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
-.container{
-    max-width:1200px;
-    margin:auto;
-    background:#fff;
-    padding:35px;
+
+.header-name {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
-.banner img{
-    width:100%;
-    height:auto;
-    border-radius:6px;
+
+.header-designation {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
-h1,h2,h3{
-    color:#002147;
+
+.header-institution {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.9;
 }
-h2{
-    border-bottom:2px solid #002147;
-    padding-bottom:6px;
-    margin-top:35px;
+
+/* ===== NAV ===== */
+nav {
+  background: #00152e;
+  text-align: center;
+  padding: 12px 0;
 }
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-    font-size:14px;
+
+nav a {
+  color: #ffffff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
 }
-th,td{
-    border:1px solid #ccc;
-    padding:10px;
-    vertical-align:top;
+
+nav a:hover {
+  text-decoration: underline;
 }
-th{
-    background:#eef4fb;
+
+/* ===== CONTENT ===== */
+section {
+  max-width: 1150px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 35px;
 }
-ul{
-    margin-top:10px;
+
+h2 {
+  color: #002147;
+  border-bottom: 2px solid #002147;
+  padding-bottom: 6px;
+  margin-bottom: 25px;
 }
-a{
-    color:#002147;
-    font-weight:600;
+
+p {
+  text-align: justify;
+  line-height: 1.8;
 }
-footer{
-    background:#002147;
-    color:#fff;
-    text-align:center;
-    padding:12px;
-    margin-top:40px;
+
+/* ===== CFP BLOCKS ===== */
+.cfp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.cfp-card {
+  background: #f7f9fb;
+  border-left: 5px solid #002147;
+  padding: 18px;
+}
+
+.cfp-card h3 {
+  margin-top: 0;
+  color: #002147;
+  font-size: 17px;
+}
+
+.cfp-card ul {
+  padding-left: 18px;
+}
+
+.cfp-card li {
+  margin-bottom: 6px;
+  text-align: justify;
+}
+
+/* ===== IMPORTANT DATES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background: #002147;
+  color: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #002147;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
 }
 </style>
 </head>
@@ -83,147 +153,160 @@ footer{
 <body>
 
 <header>
-<h1>Call for Papers – ICRTCIS 2026</h1>
-<p>7<sup>th</sup> International Conference on Recent Trends in Communication & Intelligent Systems</p>
+  <div class="header-wrap">
+    <div class="header-photo">
+      <img src="assets/photo.jpg" alt="Dr. Aditya Kumar Singh Pundir">
+    </div>
+    <div>
+      <div class="header-name">DR. ADITYA KUMAR SINGH PUNDIR</div>
+      <div class="header-designation">
+        Professor, Department of Electronics & Communication Engineering
+      </div>
+      <div class="header-institution">
+        Arya College of Engineering & I.T., Jaipur, Rajasthan, India<br>
+        Affiliation: Rajasthan Technical University, Kota, Rajasthan, India
+      </div>
+    </div>
+  </div>
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="callforpaper.html">Call for Paper</a>
-<a href="publications.html">Publications</a>
-<a href="projects.html">Projects</a>
-<a href="downloads.html">Downloads</a>
-<a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="ipr.html">IPR</a>
+  <a href="projects.html">Projects</a>
+  <a href="activities.html">Professional Activities</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="students.html">Students Supervised</a>
+  <a href="cfp.html">Call for Paper</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
-<div class="container">
+<section>
+<h2>Call for Papers</h2>
 
-<div class="banner">
-<img src="ICRTCIS-2026.jpg" alt="ICRTCIS 2026 Conference Banner">
-</div>
-
-<h2>Conference Theme</h2>
 <p>
-The Conference theme is <strong>“Recent Trends in Communication & Intelligent Systems”</strong>.
-The original, unpublished research papers aligned with the current theme of the conference
-are invited for submission.
+Researchers, academicians, industry professionals, and students are invited to submit
+their original, unpublished research contributions for presentation and publication
+in reputed international conferences and special issues coordinated and chaired by
+<strong>Dr. Aditya Kumar Singh Pundir</strong>.
 </p>
 
-<h2>Conference Tracks</h2>
+<p>
+Submitted manuscripts should demonstrate originality, technical depth, clarity,
+and relevance to contemporary challenges in engineering, technology, and applied sciences.
+</p>
+</section>
+
+<section>
+<h2>Conference Themes & Tracks</h2>
+
+<div class="cfp-grid">
+
+  <div class="cfp-card">
+    <h3>VLSI & Embedded Systems</h3>
+    <ul>
+      <li>Reconfigurable Hardware Architectures</li>
+      <li>Fault Tolerant Systems</li>
+      <li>Memory Design, Testing & Repair</li>
+      <li>FPGA / ASIC Design Methodologies</li>
+    </ul>
+  </div>
+
+  <div class="cfp-card">
+    <h3>Artificial Intelligence & Machine Learning</h3>
+    <ul>
+      <li>AI for Hardware Testing and CAD</li>
+      <li>Deep Learning Applications</li>
+      <li>Edge AI Computing</li>
+      <li>Intelligent Systems & Optimization</li>
+    </ul>
+  </div>
+
+  <div class="cfp-card">
+    <h3>Communication & Signal Processing</h3>
+    <ul>
+      <li>Wireless & Optical Communication</li>
+      <li>Signal Processing Algorithms</li>
+      <li>Image & Video Processing</li>
+      <li>Biomedical Signal Processing</li>
+    </ul>
+  </div>
+
+  <div class="cfp-card">
+    <h3>IoT & Cyber Physical Systems</h3>
+    <ul>
+      <li>IoT Architectures & Applications</li>
+      <li>Smart Systems & Sensors</li>
+      <li>Industry 4.0 Technologies</li>
+      <li>Cyber Security for IoT</li>
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<section>
+<h2>Important Dates</h2>
 
 <table>
 <tr>
-<th>Track-1<br>(Intelligent Computing & Converging Technologies)</th>
-<th>Track-2<br>(Intelligent System Communication and Sustainable Design)</th>
-<th>Track-3<br>(Intelligent Control, Measurement & Quality Assurance)</th>
+  <th>Event</th>
+  <th>Date</th>
 </tr>
-
 <tr>
-<td>
-Human-Computer Interaction<br>
-Artificial Intelligence and Machine Learning<br>
-Modelling, Optimization and Automated Software<br>
-Fuzzy Systems and Soft Computing<br>
-Cryptography and Blockchain<br>
-Performance Optimization<br>
-Data Science and Data Mining
-</td>
-
-<td>
-Intelligent Communication & Networks<br>
-ICT for Healthcare<br>
-Applied Food & Nutrition Sciences and Electronics<br>
-Smart Intelligent Systems and Their Design<br>
-VLSI, HDL, Chip Level Design CAD Technology and Simulation<br>
-Real-Time Embedded Systems and Sensors<br>
-Nano-electronics and Quantum Computing
-</td>
-
-<td>
-Intelligent Machine, Control<br>
-Power System Stability & Control<br>
-Advances in Renewable Energy Sources & Electrical Drives<br>
-Smart & Micro Grid<br>
-Hybrid Electrical Vehicles<br>
-Generation, Transmission & Distribution Issues<br>
-Wireless Power Transmission
-</td>
+  <td>Paper Submission Deadline</td>
+  <td>To be Announced</td>
+</tr>
+<tr>
+  <td>Notification of Acceptance</td>
+  <td>To be Announced</td>
+</tr>
+<tr>
+  <td>Camera Ready Submission</td>
+  <td>To be Announced</td>
+</tr>
+<tr>
+  <td>Conference Dates</td>
+  <td>To be Announced</td>
 </tr>
 </table>
+</section>
 
-<h2>Submission Guidelines</h2>
+<section>
+<h2>Publication & Indexing</h2>
 
-<h3>Author Guidelines</h3>
-<ul>
-<li>All papers must be original and not simultaneously submitted to another journal or conference.</li>
-<li>Manuscripts must be submitted in <strong>PDF format</strong> through Microsoft CMT.</li>
-<li>Author name and affiliation must not appear in the manuscript (double-blind review).</li>
-<li>Minimum paper length: <strong>10 pages</strong>.</li>
-<li>Similarity score must not exceed <strong>10%</strong>.</li>
-<li>Papers exceeding similarity limit shall not be processed.</li>
-</ul>
-
-<h3>Review Process & Oral Presentation</h3>
-<ul>
-<li>Papers with similarity score less than 10% will be processed for double-blind review.</li>
-<li>All submissions will be peer-reviewed by the Technical Committee.</li>
-<li>Paper status will be informed as:
-<ul>
-<li>(a) Accepted for Oral Presentation</li>
-<li>(b) Accepted with Minor Corrections for Oral Presentation</li>
-<li>(c) Rejected</li>
-</ul>
-</li>
-</ul>
-
-<h2>Paper Submission Link</h2>
 <p>
-Authors must create a free account on Microsoft CMT and choose the role as <strong>Author</strong>.
-After login, select “Enter as an Author” for paper submission.
+Accepted and presented papers will be published in reputed conference proceedings
+and journals associated with leading publishers such as
+<strong>Springer Nature, IET, IEEE Xplore, IOP Science, SCRS, IGI Global</strong>,
+and indexed in databases including
+<strong>Scopus, Web of Science, and Google Scholar</strong>,
+subject to publisher norms and peer review.
+</p>
+</section>
+
+<section>
+<h2>Contact & Submission</h2>
+
+<p>
+For paper submission guidelines, templates, and conference updates, please visit the
+respective conference websites or contact:
 </p>
 
 <p>
-<strong>Submission Portal:</strong><br>
-<a href="https://cmt3.research.microsoft.com/ICRTCIS2026" target="_blank">
-https://cmt3.research.microsoft.com/ICRTCIS2026
-</a>
+<strong>Dr. Aditya Kumar Singh Pundir</strong><br>
+Organizing Chair – International Conference Series<br>
+Email: aditya.pundir@gmail.com | dr.adityapundir@aryacollege.in
 </p>
-
-<h2>CMT Acknowledgment</h2>
-<p>
-The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
-This service was provided for free by Microsoft and they bore all expenses, including costs
-for Azure cloud services as well as for software development and support.
-</p>
-
-<h2>Visa Information</h2>
-<p>
-For the visa process, we confirm that no participant is from Afghanistan, China, Iran, Pakistan,
-Iraq, Sudan, foreigners of Pakistan origin and stateless persons. Participants of the conference
-will not visit any restricted or protected area in India or areas affected by terrorism,
-militancy or extremism, to the best of our knowledge.
-</p>
-
-<h2>Proceedings of ICRTCIS 2026</h2>
-
-<h3>1. Springer AIS Series – ISSN: 2524-7523 (Pending)</h3>
-<p>
-<strong>Title:</strong> “Recent Trends in Communication and Intelligent Systems”<br>
-Note: All volumes published in the AIS series will be submitted for inclusion in SpringerLink
-and for indexing in Web of Science and other databases.
-</p>
-
-<h3>2. IET Conference Proceedings – (Approved)</h3>
-<p>
-Note: All papers published in IET proceedings will be submitted for inclusion in the
-IET Digital Library, Inspec, IEEE Xplore, and for indexing in Scopus, EI Compendex, etc.
-</p>
-
-</div>
+</section>
 
 <footer>
-© ICRTCIS 2026 | Arya College of Engineering & IT, Jaipur
+© Dr. Aditya Kumar Singh Pundir
 </footer>
 
 </body>
