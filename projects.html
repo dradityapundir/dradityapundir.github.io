@@ -6,72 +6,124 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-  margin:0;
-  font-family:"Segoe UI", Arial, sans-serif;
-  background:#f4f6f8;
-  color:#222;
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
 }
-header{
-  background:linear-gradient(135deg,#0b2b4c,#123e6b);
-  color:#fff;
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(120deg, #0b2b4c, #0e3a66);
+  color: #ffffff;
 }
-.header-wrap{
-  max-width:1200px;
-  margin:auto;
-  padding:35px;
+
+.header-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 40px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: center;
 }
-nav{
-  background:#00152e;
-  text-align:center;
-  padding:12px 0;
+
+.header-photo img {
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
-nav a{
-  color:#fff;
-  margin:0 10px;
-  text-decoration:none;
-  font-weight:600;
-  font-size:14px;
+
+.header-name {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
-section{
-  max-width:1200px;
-  margin:25px auto;
-  background:#fff;
-  padding:35px;
+
+.header-designation {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
-h1{margin:0;}
-h2{
-  color:#002147;
-  border-bottom:2px solid #002147;
-  padding-bottom:6px;
-  margin-bottom:20px;
+
+.header-institution {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.9;
 }
-table{
-  width:100%;
-  border-collapse:collapse;
-  margin-top:15px;
+
+/* ===== NAV ===== */
+nav {
+  background: #00152e;
+  text-align: center;
+  padding: 12px 0;
 }
-th, td{
-  border:1px solid #ccc;
-  padding:10px;
-  vertical-align:top;
+
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
 }
-th{
-  background:#002147;
-  color:#fff;
-  text-align:left;
+
+nav a:hover {
+  text-decoration: underline;
 }
-td{
-  text-align:justify;
+
+/* ===== CONTENT ===== */
+section {
+  max-width: 1200px;
+  margin: 25px auto;
+  background: #ffffff;
+  padding: 35px;
 }
-.status{
-  font-weight:600;
+
+h2 {
+  color: #002147;
+  border-bottom: 2px solid #002147;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
 }
-footer{
-  background:#002147;
-  color:#fff;
-  text-align:center;
-  padding:12px;
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+}
+
+th {
+  background: #002147;
+  color: #ffffff;
+  text-align: left;
+}
+
+td {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.status {
+  font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #002147;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
 }
 </style>
 </head>
@@ -80,57 +132,37 @@ footer{
 
 <header>
   <div class="header-wrap">
-    <h1>Projects</h1>
-    <p>Funding, Grants & Research Projects</p>
+    <div class="header-photo">
+      <img src="assets/photo.jpg" alt="Dr. Aditya Kumar Singh Pundir">
+    </div>
+    <div>
+      <div class="header-name">DR. ADITYA KUMAR SINGH PUNDIR</div>
+      <div class="header-designation">
+        Professor, Department of Electronics & Communication Engineering
+      </div>
+      <div class="header-institution">
+        Arya College of Engineering & I.T., Jaipur, Rajasthan, India<br>
+        Affiliation: Rajasthan Technical University, Kota, Rajasthan, India
+      </div>
+    </div>
   </div>
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="education.html">Education</a>
-<a href="experience.html">Experience</a>
-<a href="research.html">Research</a>
-<a href="publications.html">Publications</a>
-<a href="ipr.html">IPR</a>
-<a href="projects.html">Projects</a>
-<a href="activities.html">Professional Activities</a>
-<a href="workshops.html">Workshops</a>
-<a href="students.html">Students Supervised</a>
-<a href="cfp.html">Call for Paper</a>
-<a href="downloads.html">Downloads</a>
-<a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="ipr.html">IPR</a>
+  <a href="projects.html">Projects</a>
+  <a href="activities.html">Professional Activities</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="students.html">Students Supervised</a>
+  <a href="cfp.html">Call for Paper</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="contact.html">Contact</a>
 </nav>
-
-<section>
-<h2>Project / Grant Applied</h2>
-
-<table>
-<tr>
-  <th>Project</th>
-  <th>Funding Agency</th>
-  <th>Amount (INR)</th>
-  <th>Status</th>
-</tr>
-
-<tr>
-  <td>
-  AI driven VLSI & Embedded Systems Design and EDA tools<br>
-  FDP Start Date: 08.09.2025<br>
-  FDP End Date: 13.09.2025
-  </td>
-  <td>AICTE</td>
-  <td>3,50,000</td>
-  <td class="status">Applied, Result Awaited</td>
-</tr>
-
-<tr>
-  <td>Grant for Seminar and Conference</td>
-  <td>ANRF</td>
-  <td>4,07,000</td>
-  <td class="status">Applied, Result Awaited</td>
-</tr>
-</table>
-</section>
 
 <section>
 <h2>Project / Grant Running</h2>
