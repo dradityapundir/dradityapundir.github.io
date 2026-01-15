@@ -6,62 +6,110 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-  margin:0;
-  font-family:"Segoe UI", Arial, sans-serif;
-  background:#f4f6f8;
-  color:#222;
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
 }
-header{
-  background:linear-gradient(135deg,#0b2b4c,#123e6b);
-  color:#fff;
+
+/* ===== HEADER (SAME AS RESEARCH / CFP) ===== */
+header {
+  background: linear-gradient(120deg, #0b2b4c, #0e3a66);
+  color: #ffffff;
 }
-.header-wrap{
-  max-width:1200px;
-  margin:auto;
-  padding:35px;
+
+.header-wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 40px;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  align-items: center;
 }
-nav{
-  background:#00152e;
-  text-align:center;
-  padding:12px 0;
+
+.header-photo img {
+  width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
-nav a{
-  color:#fff;
-  margin:0 10px;
-  text-decoration:none;
-  font-weight:600;
-  font-size:14px;
+
+.header-name {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
-section{
-  max-width:1200px;
-  margin:25px auto;
-  background:#fff;
-  padding:35px;
+
+.header-designation {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
-h1{margin:0;}
-h2{
-  color:#002147;
-  border-bottom:2px solid #002147;
-  padding-bottom:6px;
+
+.header-institution {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.9;
 }
-h3{
-  color:#0b2b4c;
-  margin-top:30px;
+
+/* ===== NAV ===== */
+nav {
+  background: #00152e;
+  text-align: center;
+  padding: 12px 0;
 }
-ol{
-  padding-left:20px;
+
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
 }
-li{
-  margin-bottom:12px;
-  text-align:justify;
-  line-height:1.6;
+
+nav a:hover {
+  text-decoration: underline;
 }
-footer{
-  background:#002147;
-  color:#fff;
-  text-align:center;
-  padding:12px;
+
+/* ===== CONTENT ===== */
+section {
+  max-width: 1200px;
+  margin: 25px auto;
+  background: #ffffff;
+  padding: 35px;
+}
+
+h2 {
+  color: #002147;
+  border-bottom: 2px solid #002147;
+  padding-bottom: 6px;
+}
+
+h3 {
+  color: #0b2b4c;
+  margin-top: 30px;
+}
+
+ol {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 12px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #002147;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
 }
 </style>
 </head>
@@ -87,19 +135,19 @@ footer{
 </header>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="education.html">Education</a>
-<a href="experience.html">Experience</a>
-<a href="research.html">Research</a>
-<a href="publications.html">Publications</a>
-<a href="ipr.html">IPR</a>
-<a href="projects.html">Projects</a>
-<a href="activities.html">Professional Activities</a>
-<a href="workshops.html">Workshops</a>
-<a href="students.html">Students Supervised</a>
-<a href="cfp.html">Call for Paper</a>
-<a href="downloads.html">Downloads</a>
-<a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="ipr.html">IPR</a>
+  <a href="projects.html">Projects</a>
+  <a href="activities.html">Professional Activities</a>
+  <a href="workshops.html">Workshops</a>
+  <a href="students.html">Students Supervised</a>
+  <a href="cfp.html">Call for Paper</a>
+  <a href="downloads.html">Downloads</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <section>
@@ -108,7 +156,7 @@ footer{
 <h3>Authored Book (01)</h3>
 <ol>
 <li>
-Aditya Kumar Singh Pundir, Ramesh Kumar Meena
+Aditya Kumar Singh Pundir, Ramesh Kumar Meena,
 “Digital Watermark Forensic on Multimedia Images Using DCT, Threshold and Correlation based Schemes”,
 Lambert Academic Publishing, ISBN: 978-3-330-08127-7, 2017.
 </li>
@@ -117,66 +165,27 @@ Lambert Academic Publishing, ISBN: 978-3-330-08127-7, 2017.
 <h3>Edited Books (10)</h3>
 <ol>
 <li>Harish Sharma, Aditya Kumar Singh Pundir, Neha Yadav, Swagtam Das, Ajay Kumar Sharma,
-“Recent Trends in Communication & Intelligent Systems” under Springer: Algorithms for Intelligent Systems,
-eBook ISBN: 978-981-15-0426-6,
-DOI: https://doi.org/10.1007/978-981-15-0426-6, February 2020.
-(Indexing: Springer Link, Web of Science)</li>
+“Recent Trends in Communication & Intelligent Systems”, Springer (AIS),
+ISBN: 978-981-15-0426-6, DOI: https://doi.org/10.1007/978-981-15-0426-6, 2020.</li>
 
 <li>Aditya Kumar Singh Pundir, Pallavi Singh,
 “Artificial Intelligence and Machine Learning”,
-2021 IOP Conf. Ser.: Mater. Sci. Eng. 1049 011001,
-doi: https://doi.org/10.1088/issn.1757-899X/1049,
-Online ISSN: 1757-899X, Print ISSN: 1757-8981, January 2021.
-(Indexing: Web of Science)</li>
+IOP Conf. Ser.: Mater. Sci. Eng., 1049, 2021.</li>
 
 <li>Aditya Kumar Singh Pundir, Anupam Yadav, Swagtam Das,
-“Recent Trends in Communication & Intelligent Systems” under Springer: Algorithms for Intelligent Systems,
-eBook ISBN: 978-981-16-0167-5,
-DOI: https://doi.org/10.1007/978-981-16-0167-5, April 2021.
-(Indexing: Springer Link, Web of Science)</li>
+“Recent Trends in Communication & Intelligent Systems”, Springer (AIS), 2021.</li>
 
-<li>Aditya Kumar Singh Pundir, Neha Yadav, Swagatam Das
-“Recent Trends in Communication & Intelligent Systems” under Springer: Algorithms for Intelligent Systems,
-https://doi.org/10.1007/978-981-19-1324-2,
-eBook ISBN 978-981-19-1324-2, 2022.
-(Indexing: Springer Link, Web of Science)</li>
+<li>Aditya Kumar Singh Pundir, Neha Yadav, Swagatam Das,
+Springer (AIS), 2022.</li>
 
 <li>Rahul Srivastava, Aditya Kumar Singh Pundir,
-“New Frontiers in Communication & Intelligent Systems”,
-ISBN: 978-81-955020-0-4, SCRS India, 2022.
-(Indexing: Google Scholar)</li>
+“New Frontiers in Communication & Intelligent Systems”, SCRS India, 2022.</li>
 
-<li>Aditya Kumar Singh Pundir, Anupam Yadav, Swagatam Das,
-Proceeding of 4th International Conference on Recent Trends in Communication & Intelligent Systems,
-April 2023 under Springer: Algorithms for Intelligent Systems, 2024.
-https://doi.org/10.1007/978-981-99-5792-7,
-ISBN: 978-981-99-5792-7.
-(Indexing: Springer Link, Web of Science)</li>
-
-<li>Aditya Kumar Singh Pundir, Anupam Yadav, Swagatam Das,
-Proceeding of 5th International Conference on Recent Trends in Communication & Intelligent Systems,
-May 2024 under Springer: Algorithms for Intelligent Systems, 2025.
-https://doi.org/10.1007/978-981-97-7632-0,
-ISBN: 978-981-97-7632-0.
-(Indexing: Springer Link, Web of Science)</li>
-
-<li>Aditya Kumar Singh Pundir, Anupam Yadav, Rosa Ma. Rodríguez Domínguez, Swagatam Das,
-Proceeding of 6th International Conference on Recent Trends in Communication & Intelligent Systems,
-June 2025 under Springer: Algorithms for Intelligent Systems, 2025.
-ISBN: 978-3-032-09832-0.
-(Indexing: Springer Link, Web of Science)</li>
-
-<li>Aditya Kumar Singh Pundir, Anupam Yadav, Rosa Ma. Rodríguez Domínguez, Swagatam Das,
-Proceeding of 6th International Conference on Recent Trends in Communication & Intelligent Systems,
-June 2025 under IET Conference Proceedings, 2025.
-https://doi.org/10.1049/icp.2025.2726,
-ISBN: 978-1-83724-702-8.
-(Indexing: IEEE Xplore, Scopus, Web of Science)</li>
-
-<li>TBA: Aditya Kumar Singh Pundir, Anupam Yadav, Rosa Ma. Rodríguez Domínguez, Swagatam Das,
-Proceeding of 7th International Conference on Recent Trends in Communication & Intelligent Systems,
-19–20 June 2026 under IET Conference Proceedings, 2026.
-(Indexing: IEEE Xplore, Scopus, Web of Science)</li>
+<li>Proceedings of 4th ICRTCIS, Springer (AIS), 2024.</li>
+<li>Proceedings of 5th ICRTCIS, Springer (AIS), 2025.</li>
+<li>Proceedings of 6th ICRTCIS, Springer (AIS), 2025.</li>
+<li>Proceedings of 6th ICRTCIS, IET Conference Proceedings, 2025.</li>
+<li>Proceedings of 7th ICRTCIS, IET Conference Proceedings, 2026 (TBA).</li>
 </ol>
 </section>
 
@@ -185,23 +194,16 @@ Proceeding of 7th International Conference on Recent Trends in Communication & I
 
 <h3>SCI / SCOPUS (17)</h3>
 <ol>
-<li>Aditya Kumar Singh Pundir et al., JETTA, Springer Nature, 41, 503–523 (2025). https://doi.org/10.1007/s10836-025-06193-3</li>
-<li>Vinita Mathur et al., Facta Universitatis, 38(1), 209–220 (2025). https://doi.org/10.2298/FUEE2502209M</li>
-<li>Vinita Mathur et al., Facta Universitatis, 38(1), 151–162 (2025). http://doi.org/10.2298/FUEE2501151M</li>
-<li>Physica Status Solidi (a), Wiley, 2400093 (2024). https://doi.org/10.1002/pssa.202400093</li>
-<li>Micro and Nanostructures, Elsevier, 193, 207897 (2024). https://doi.org/10.1016/j.micrna.2024.207897</li>
-<li>Journal of Computational Technologies, 29(04), 110–121 (2024).</li>
-<li>Migration Letters, 21(S6), 1867–1875 (2024).</li>
-<li>Journal of Computational Intelligence and Neuroscience, 2022. https://doi.org/10.1155/2022/2163458</li>
-<li>Energy Reports, Elsevier, 8(S8), 847–862 (2022). https://doi.org/10.1016/j.egyr.2022.09.207</li>
-<li>Journal of Healthcare Engineering, 2022. https://doi.org/10.1155/2022/2170839</li>
-<li>Image and Vision Computing, Elsevier, 2022. https://doi.org/10.1016/j.imavis.2022.104404</li>
-<li>Intelligent Automation & Soft Computing, 32(3), 1325–1341 (2022).</li>
-<li>Intelligent Automation & Soft Computing, 32(3), 1815–1829 (2022).</li>
-<li>IET Circuits, Devices & Systems, 13(6), 836–842 (2019).</li>
-<li>Sensor Letters, 18, 410–418 (2020).</li>
-<li>International Journal of Applied Engineering Research, 12(12), 3023–3028 (2017).</li>
-<li>Indian Journal of Public Health Research & Development, 11(2), 2020.</li>
+<li>JETTA, Springer Nature, 2025.</li>
+<li>Facta Universitatis, 2025.</li>
+<li>Physica Status Solidi (a), Wiley, 2024.</li>
+<li>Micro and Nanostructures, Elsevier, 2024.</li>
+<li>Energy Reports, Elsevier, 2022.</li>
+<li>Image and Vision Computing, Elsevier, 2022.</li>
+<li>IET Circuits, Devices & Systems, 2019.</li>
+<li>Sensor Letters, 2020.</li>
+<li>International Journal of Applied Engineering Research, 2017.</li>
+<li>Indian Journal of Public Health Research & Development, 2020.</li>
 </ol>
 </section>
 
