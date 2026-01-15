@@ -6,21 +6,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* ===== GLOBAL ===== */
 body{
   margin:0;
-  font-family:"Segoe UI", Arial, sans-serif;
+  font-family:"Segoe UI", Arial, Helvetica, sans-serif;
   background:#f4f6f8;
   color:#222;
 }
+
+/* ===== HEADER ===== */
 header{
-  background:linear-gradient(135deg,#0b2b4c,#123e6b);
+  background:linear-gradient(120deg,#0b2b4c,#0e3a66);
   color:#fff;
 }
 .header-wrap{
   max-width:1200px;
   margin:auto;
-  padding:35px;
+  padding:45px 40px;
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:40px;
+  align-items:center;
 }
+.header-photo img{
+  width:180px;
+  border-radius:12px;
+  box-shadow:0 12px 28px rgba(0,0,0,0.35);
+}
+.header-name{
+  font-size:34px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+.header-designation{
+  font-size:17px;
+  font-weight:500;
+  margin-bottom:12px;
+}
+.header-institution{
+  font-size:14px;
+  line-height:1.7;
+  opacity:0.9;
+}
+
+/* ===== NAV ===== */
 nav{
   background:#00152e;
   text-align:center;
@@ -33,23 +63,29 @@ nav a{
   font-weight:600;
   font-size:14px;
 }
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* ===== CONTENT ===== */
 section{
-  max-width:1100px;
+  max-width:1200px;
   margin:25px auto;
   background:#fff;
   padding:35px;
 }
-h1{margin:0;}
 h2{
   color:#002147;
   border-bottom:2px solid #002147;
   padding-bottom:6px;
-  margin-top:0;
+  margin-bottom:15px;
 }
 h3{
   color:#123e6b;
   margin-top:25px;
 }
+
+/* ===== TABLE ===== */
 table{
   width:100%;
   border-collapse:collapse;
@@ -61,22 +97,28 @@ th, td{
   vertical-align:top;
 }
 th{
-  background:#eef4fb;
+  background:#002147;
+  color:#fff;
   text-align:left;
 }
-ul{
-  margin:10px 0 0 20px;
+td{
+  text-align:justify;
 }
+
+/* ===== HIGHLIGHT ===== */
+.highlight{
+  background:#eef4fb;
+  padding:15px;
+  border-left:5px solid #002147;
+}
+
+/* ===== FOOTER ===== */
 footer{
   background:#002147;
   color:#fff;
   text-align:center;
   padding:12px;
-}
-.highlight{
-  background:#eef4fb;
-  padding:15px;
-  border-left:5px solid #002147;
+  font-size:14px;
 }
 </style>
 </head>
@@ -85,8 +127,19 @@ footer{
 
 <header>
   <div class="header-wrap">
-    <h1>Students Supervised</h1>
-    <p>Ph.D. & Postgraduate Research Supervision</p>
+    <div class="header-photo">
+      <img src="assets/photo.jpg" alt="Dr. Aditya Kumar Singh Pundir">
+    </div>
+    <div>
+      <div class="header-name">DR. ADITYA KUMAR SINGH PUNDIR</div>
+      <div class="header-designation">
+        Professor, Department of Electronics & Communication Engineering
+      </div>
+      <div class="header-institution">
+        Arya College of Engineering & I.T., Jaipur, Rajasthan, India<br>
+        Affiliation: Rajasthan Technical University, Kota, Rajasthan, India
+      </div>
+    </div>
   </div>
 </header>
 
@@ -109,7 +162,7 @@ footer{
 <section>
 <h2>Research Supervisor</h2>
 <div class="highlight">
-<p style="text-align:justify;">
+<p>
 <strong>Registered Ph.D. Supervisor</strong> in Rajasthan Technical University, Kota<br>
 Office Order: <strong>RTU/Dean/(R)/F(45)/2024/1053-1062</strong><br>
 Dated: <strong>16/03/2024</strong>
@@ -153,7 +206,6 @@ Dated: <strong>16/03/2024</strong>
 
 <section>
 <h2>M.Tech. Dissertation Guidance</h2>
-
 <table>
 <tr>
 <th>Category</th>
@@ -184,11 +236,10 @@ C, MATLAB, VHDL, Assembly
 </td>
 </tr>
 </table>
-
 </section>
 
 <footer>
-© Dr. Aditya Kumar Singh Pundir | Students Supervised
+© Dr. Aditya Kumar Singh Pundir
 </footer>
 
 </body>
