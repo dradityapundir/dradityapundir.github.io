@@ -6,21 +6,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* ===== GLOBAL ===== */
 body{
   margin:0;
-  font-family:"Segoe UI", Arial, sans-serif;
+  font-family:"Segoe UI", Arial, Helvetica, sans-serif;
   background:#f4f6f8;
   color:#222;
 }
+
+/* ===== HEADER ===== */
 header{
-  background:linear-gradient(135deg,#0b2b4c,#123e6b);
+  background:linear-gradient(120deg,#0b2b4c,#0e3a66);
   color:#fff;
 }
 .header-wrap{
   max-width:1200px;
   margin:auto;
-  padding:35px;
+  padding:45px 40px;
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:40px;
+  align-items:center;
 }
+.header-photo img{
+  width:180px;
+  border-radius:12px;
+  box-shadow:0 12px 28px rgba(0,0,0,0.35);
+}
+.header-name{
+  font-size:34px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+.header-designation{
+  font-size:17px;
+  font-weight:500;
+  margin-bottom:12px;
+}
+.header-institution{
+  font-size:14px;
+  line-height:1.7;
+  opacity:0.9;
+}
+
+/* ===== NAV ===== */
 nav{
   background:#00152e;
   text-align:center;
@@ -33,19 +63,25 @@ nav a{
   font-weight:600;
   font-size:14px;
 }
+nav a:hover{
+  text-decoration:underline;
+}
+
+/* ===== CONTENT ===== */
 section{
   max-width:1200px;
   margin:25px auto;
   background:#fff;
   padding:35px;
 }
-h1{margin:0;}
 h2{
   color:#002147;
   border-bottom:2px solid #002147;
   padding-bottom:6px;
-  margin-top:0;
+  margin-bottom:15px;
 }
+
+/* ===== TABLE ===== */
 table{
   width:100%;
   border-collapse:collapse;
@@ -58,7 +94,8 @@ th, td{
   vertical-align:top;
 }
 th{
-  background:#eef4fb;
+  background:#002147;
+  color:#fff;
   text-align:left;
 }
 td{
@@ -68,11 +105,17 @@ a{
   color:#002147;
   text-decoration:none;
 }
+a:hover{
+  text-decoration:underline;
+}
+
+/* ===== FOOTER ===== */
 footer{
   background:#002147;
   color:#fff;
   text-align:center;
   padding:12px;
+  font-size:14px;
 }
 </style>
 </head>
@@ -81,8 +124,19 @@ footer{
 
 <header>
   <div class="header-wrap">
-    <h1>Certifications, Courses & FDPs</h1>
-    <p>Professional Development & Faculty Training</p>
+    <div class="header-photo">
+      <img src="assets/photo.jpg" alt="Dr. Aditya Kumar Singh Pundir">
+    </div>
+    <div>
+      <div class="header-name">DR. ADITYA KUMAR SINGH PUNDIR</div>
+      <div class="header-designation">
+        Professor, Department of Electronics & Communication Engineering
+      </div>
+      <div class="header-institution">
+        Arya College of Engineering & I.T., Jaipur, Rajasthan, India<br>
+        Affiliation: Rajasthan Technical University, Kota, Rajasthan, India
+      </div>
+    </div>
   </div>
 </header>
 
@@ -203,13 +257,11 @@ View Certification
 <td>Online</td>
 <td>2023–24</td>
 </tr>
-
 </table>
 </section>
 
 <section>
 <h2>FDP / STTP / Seminar / Webinar / MOOCs Participated</h2>
-
 <table>
 <tr>
 <th>S. No.</th>
@@ -224,7 +276,7 @@ View Certification
 <tr><td>3</td><td>Ecosystem for IPR Startup and Entrepreneurship</td><td>ACEIT, Jaipur</td><td>Online</td><td>22–26 Nov 2022</td></tr>
 <tr><td>4</td><td>Unlock Blockchain</td><td>AKGEC, Ghaziabad</td><td>Online</td><td>01–05 Aug 2022</td></tr>
 <tr><td>5</td><td>Recent Trends in Mechanical Engineering (FDP)</td><td>ICFAI University, Jaipur</td><td>Online</td><td>20–24 July 2021</td></tr>
-<tr><td>6</td><td>UHV Refresher I FDP</td><td>AICTE</td><td>Online</td><td>18–22 Apr 2022</td></tr>
+<tr><td>6</td><td>UHV Refresher-I FDP</td><td>AICTE</td><td>Online</td><td>18–22 Apr 2022</td></tr>
 <tr><td>7</td><td>UHV-II FDP</td><td>AICTE</td><td>Online</td><td>20–25 Jun 2022</td></tr>
 <tr><td>8</td><td>Next Generation Wireless Technologies: 5G and Beyond</td><td>Indo-Global College of Engineering</td><td>Online</td><td>16–21 Aug 2021</td></tr>
 <tr><td>9</td><td>Orientation Training Programme for Mentors</td><td>NITTTR-AICTE</td><td>Online</td><td>22–26 Nov 2021</td></tr>
@@ -243,12 +295,11 @@ View Certification
 <tr><td>22</td><td>ATAL FDP – Quantum Computing</td><td>MNIT Jaipur</td><td>Online</td><td>23–27 Nov 2020</td></tr>
 <tr><td>23</td><td>ATAL FDP – Lab on Chip</td><td>DIAT</td><td>Online</td><td>14–18 Dec 2020</td></tr>
 <tr><td>24</td><td>ATAL FDP – Biomedical Instrumentation</td><td>University BDT College of Engineering</td><td>Online</td><td>07–11 Dec 2020</td></tr>
-
 </table>
 </section>
 
 <footer>
-© Dr. Aditya Kumar Singh Pundir | Workshops & Certifications
+© Dr. Aditya Kumar Singh Pundir
 </footer>
 
 </body>
