@@ -4,7 +4,7 @@
 
 <meta name="description" content="Dr. Aditya Kumar Singh Pundir – Professor of Electronics & Communication Engineering, Researcher in VLSI, Embedded Systems, AI, Memory Testing, IPRs, Patents, Conferences & Academic Leadership.">
 
-<meta name="keywords" content="Aditya Pundir, Dr Aditya Kumar Singh Pundir, VLSI, Embedded Systems, AI, Memory Testing, MBIST, ASIC Tapeout, TinyTapeout, IHP SG13G2, Professor ECE">
+<meta name="keywords" content="Aditya Pundir, Dr Aditya Kumar Singh Pundir, VLSI, Embedded Systems, AI, Memory Testing, IPR, Professor ECE, ICRTCIS, Arya College Jaipur">
 
 <meta name="author" content="Dr. Aditya Kumar Singh Pundir">
 
@@ -13,12 +13,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* ===== GLOBAL ===== */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   background: #f4f6f8;
   color: #222;
 }
+
+/* ===== HEADER ===== */
 header {
   background: linear-gradient(120deg, #0b2b4c, #0e3a66);
   color: #ffffff;
@@ -40,9 +43,12 @@ header {
 .header-name {
   font-size: 34px;
   font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 .header-designation {
   font-size: 17px;
+  font-weight: 500;
   margin-bottom: 12px;
 }
 .header-institution {
@@ -50,6 +56,8 @@ header {
   line-height: 1.7;
   opacity: 0.9;
 }
+
+/* ===== NAV ===== */
 nav {
   background: #00152e;
   text-align: center;
@@ -62,6 +70,11 @@ nav a {
   font-weight: 600;
   font-size: 14px;
 }
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTENT ===== */
 section {
   max-width: 1200px;
   margin: 25px auto;
@@ -72,7 +85,10 @@ h2 {
   color: #002147;
   border-bottom: 2px solid #002147;
   padding-bottom: 6px;
+  margin-bottom: 20px;
 }
+
+/* ===== TABLE ===== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -80,12 +96,13 @@ table {
 }
 th, td {
   border: 1px solid #ccc;
-  padding: 12px;
+  padding: 10px;
   vertical-align: top;
 }
 th {
   background: #002147;
   color: #ffffff;
+  text-align: left;
 }
 td {
   text-align: justify;
@@ -93,19 +110,42 @@ td {
 }
 .status {
   font-weight: 600;
-  color: #0b5e1e;
 }
-.project-desc {
-  margin-top: 10px;
+
+/* ===== Tapeout Block ===== */
+.tapeout-desc {
+  margin-top: 12px;
   background: #f5f8fc;
   padding: 15px;
   border-left: 4px solid #002147;
+  font-size: 14px;
 }
+.tapeout-desc ul {
+  margin: 8px 0 8px 20px;
+}
+.gds-view {
+  margin-top: 15px;
+  text-align: center;
+}
+.gds-view img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+.gds-caption {
+  font-size: 13px;
+  margin-top: 6px;
+  font-style: italic;
+  color: #444;
+}
+
+/* ===== FOOTER ===== */
 footer {
   background: #002147;
   color: #ffffff;
   text-align: center;
   padding: 12px;
+  font-size: 14px;
 }
 </style>
 
@@ -129,10 +169,12 @@ footer {
     </div>
     <div>
       <div class="header-name">DR. ADITYA KUMAR SINGH PUNDIR</div>
-      <div class="header-designation">Professor, Department of Electronics & Communication Engineering</div>
+      <div class="header-designation">
+        Professor, Department of Electronics & Communication Engineering
+      </div>
       <div class="header-institution">
         Arya College of Engineering & I.T., Jaipur, Rajasthan, India<br>
-        Affiliation: Rajasthan Technical University, Kota
+        Affiliation: Rajasthan Technical University, Kota, Rajasthan, India
       </div>
     </div>
   </div>
@@ -167,39 +209,99 @@ footer {
 
 <tr>
 <td>
-<strong>C2S Programme (ASIC Tape-out Achievement)</strong>
+<strong>C2S Programme</strong>
 
-<div class="project-desc">
-🚀 <strong>MBIST + MBISR Digital Core — Taped Out</strong><br><br>
-
+<div class="tapeout-desc">
+🚀 <strong>MBIST + MBISR Digital Core — Taped Out!</strong><br>
 <strong>Fabrication Target:</strong> IHP SG13G2 130 nm (TinyTapeout IHP 26A)<br><br>
 
-Complete custom ASIC design — RTL to GDSII — successfully submitted via TinyTapeout IHP 26A MPW shuttle.
+Complete custom IC design (RTL → GDSII) successfully submitted via TinyTapeout IHP 26A shuttle.
 
+<strong>🔬 Fabrication & PDK</strong>
 <ul>
-<li><strong>Foundry:</strong> IHP – Leibniz Institute, Germany</li>
-<li><strong>Process:</strong> SG13G2 130 nm Open-Source CMOS/BiCMOS</li>
-<li><strong>Service Provider:</strong> TinyTapeout (Israel)</li>
-<li><strong>Tile Area:</strong> ~16,000 µm²</li>
+<li>Foundry: IHP – Leibniz Institute, Germany 🇩🇪</li>
+<li>Process: SG13G2 130 nm CMOS/BiCMOS</li>
+<li>PDK: IHP SG13G2 Open-Source</li>
+<li>Service Provider: TinyTapeout 🇮🇱</li>
+<li>Tile: ~160 × 100 µm</li>
 </ul>
 
-<strong>Design Highlights:</strong>
+<strong>🧠 Design</strong>
 <ul>
 <li>Integrated MBIST + MBISR</li>
-<li>March C- fault detection with CAM-based repair</li>
-<li>Improves embedded memory reliability and yield</li>
+<li>March C- with CAM redundancy repair</li>
+<li>Improved memory yield & reliability</li>
 </ul>
 
-<strong>ASIC Flow:</strong> RTL → OpenROAD → P&R → CTS → DRC/LVS → GDSII<br>
+<strong>🛠️ Metrics</strong>
+<ul>
+<li>Core Area: ~7,775.53 µm²</li>
+<li>Standard Cells: 2,351</li>
+<li>Sequential Density: ~51.6%</li>
+</ul>
 
-<strong>Status:</strong> Successfully merged into TinyTapeout 26A shuttle<br>
+<strong>📅 Status</strong><br>
+Submission: 06 Dec 2025<br>
+✔ Merged into TinyTapeout 26A<br>
 <a href="https://app.tinytapeout.com/projects/3498" target="_blank">Project Link</a>
+
+<div class="gds-view">
+<img src="assets/gds_view.jpg" alt="GDSII layout view">
+<div class="gds-caption">GDSII Layout – MBIST + MBISR Digital Core</div>
+</div>
 </div>
 </td>
 
 <td>MEITY, Government of India</td>
 <td>SMDP (Tools above 10 Crs)</td>
 <td class="status">Running</td>
+</tr>
+
+</table>
+</section>
+
+<section>
+<h2>Project / Grant Completed</h2>
+
+<table>
+<tr>
+<th>Project</th>
+<th>Funding Agency</th>
+<th>Amount (INR)</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>
+“Adaptive Bio-Impedance Based Monitoring System for Medical and Industrial Applications”<br>
+Ramesh Kumar Meena, S. K. Pahuja, H. S. Mewara, Aditya Kumar Singh Pundir (Co-PI), Shashank Tripathi<br>
+Grant No. 1-5737385093<br>
+Duration: 18 June 2019 – 30 June 2021
+</td>
+<td>TEQIP III Collaborative Research Scheme, NPIU</td>
+<td>4,11,000</td>
+<td class="status">Completed</td>
+</tr>
+
+<tr>
+<td>Springer International Conference on Recent Trends in Communication & Intelligent Systems<br>June 08–09, 2019</td>
+<td>TEQIP III RTU (ATU)</td>
+<td>Up to 5,00,000</td>
+<td class="status">Completed</td>
+</tr>
+
+<tr>
+<td>National Level Seminar on Recent Trends in VLSI & Embedded Systems (RTVES-2014)</td>
+<td>DRDO</td>
+<td>50,000</td>
+<td class="status">Completed</td>
+</tr>
+
+<tr>
+<td>3rd International Conference on Recent Trends in Communication and Intelligent Systems, ICRTCIS 2021</td>
+<td>AICTE (GOC)</td>
+<td>2,94,200</td>
+<td class="status">Completed</td>
 </tr>
 
 </table>
